@@ -17,7 +17,7 @@ complexNumber(arrayComplex1, arrayComplex2);
  * @param arrayComplex2 segundo complejo
  * @return Devuelve el valor de la suma de ambos complejos
  */
-function complexAdd(arrayComplex1, arrayComplex2) {
+export function complexAdd(arrayComplex1, arrayComplex2) {
     const arrayResult = new Array(1);
     for (let i = 0; i < 2; i++) {
         arrayResult[i] = arrayComplex1[i] + arrayComplex2[i];
