@@ -1,14 +1,4 @@
 /* eslint-disable max-len */
-
-const array1: String[] = ['allow', 'lowering', 'ringmaster', 'terror'];
-const vector2: String[] = ['kingdom', 'dominator', 'notorious', 'usual', 'allegory'];
-
-console.log(`Array 1: `);
-meshArray(array1);
-console.log(``);
-console.log(`Array 2: `);
-meshArray(vector2);
-
 /**
  * Recibe un vector de string para comprobar si estas strings están encadenadas o no. Para que estén encadenadas
  * uno o más caracteres del final de la primera palabra, deben coincidir en orden con los de la siguiente y así
@@ -18,7 +8,7 @@ meshArray(vector2);
  * válida, indica error al encadenar en otro caso
  */
 
-function meshArray(palabras: String[]) {
+export function meshArray(palabras: String[]) {
   let coincidenciaEncontrada: boolean;
   let posicionCoincidencia: number;
   let resultado = '';
@@ -44,3 +34,12 @@ function meshArray(palabras: String[]) {
     console.log('Error al encadenar');
   }
 }
+
+const array1: String[] = ['allow', 'lowering', 'ringmaster', 'terror'];
+const vector2: String[] = ['kingdom', 'dominator', 'notorious', 'usual', 'allegory'];
+
+console.log(`Array 1: `);
+meshArray(array1);
+console.log(``);
+console.log(`Array 2: `);
+meshArray(vector2);

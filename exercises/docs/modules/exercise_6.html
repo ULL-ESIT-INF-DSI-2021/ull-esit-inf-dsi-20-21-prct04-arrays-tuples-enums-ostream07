@@ -73,10 +73,9 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="exercise_6.html#euclideandistance" class="tsd-kind-icon">euclidean<wbr>Distance</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="exercise_6.html#point" class="tsd-kind-icon">point</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="exercise_6.html#pointsadd" class="tsd-kind-icon">points<wbr>Add</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="exercise_6.html#pointsproduct" class="tsd-kind-icon">points<wbr>Product</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="exercise_6.html#pointssubstract" class="tsd-kind-icon">points<wbr>Substract</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="exercise_6.html#pointadd" class="tsd-kind-icon">point<wbr>Add</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="exercise_6.html#pointproduct" class="tsd-kind-icon">point<wbr>Product</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="exercise_6.html#pointsubstract" class="tsd-kind-icon">point<wbr>Substract</a></li>
 							</ul>
 						</section>
 					</div>
@@ -88,189 +87,151 @@
 					<a name="euclideandistance" class="tsd-anchor"></a>
 					<h3>euclidean<wbr>Distance</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">euclidean<wbr>Distance<span class="tsd-signature-symbol">(</span>arrayPoint1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, arrayPoint2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">euclidean<wbr>Distance<span class="tsd-signature-symbol">(</span>point1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, point2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct04-arrays-tuples-enums-ostream07/blob/1d1b43d/exercises/src/exercise-6.ts#L59">exercise-6.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct04-arrays-tuples-enums-ostream07/blob/102c3e6/exercises/src/exercise-6.ts#L66">exercise-6.ts:66</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Aplicando el teorema de Pitágoras, devuelve la distancia Euclídea
-									entre 2 puntos</p>
+									<p>Función que realiza la distancia euclídea de dos puntos</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>arrayPoint1: <span class="tsd-signature-type">any</span></h5>
+									<h5>point1: <span class="tsd-signature-type">any</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>contiene las coordenadas x, y del punto 1.</p>
+										<p>Coordenadas del punto 1</p>
 									</div>
 								</li>
 								<li>
-									<h5>arrayPoint2: <span class="tsd-signature-type">any</span></h5>
+									<h5>point2: <span class="tsd-signature-type">any</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>contiene las coordenadas x, y del punto 2.</p>
+										<p>Coordenadas del punto 2</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-							<p>Devuelve con 2 decimales de precisión la distancia Euclídea</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>Retorna el valor de la distancia euclídea de ambos puntos</p>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="point" class="tsd-anchor"></a>
-					<h3>point</h3>
+					<a name="pointadd" class="tsd-anchor"></a>
+					<h3>point<wbr>Add</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">point<span class="tsd-signature-symbol">(</span>arrayPoint1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, arrayPoint2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">point<wbr>Add<span class="tsd-signature-symbol">(</span>point1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, point2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Point</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct04-arrays-tuples-enums-ostream07/blob/1d1b43d/exercises/src/exercise-6.ts#L79">exercise-6.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct04-arrays-tuples-enums-ostream07/blob/102c3e6/exercises/src/exercise-6.ts#L30">exercise-6.ts:30</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>FUNCIÓN PRINCIPAL</p>
+									<p>Función que realiza la suma de dos puntos</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>arrayPoint1: <span class="tsd-signature-type">any</span></h5>
+									<h5>point1: <span class="tsd-signature-type">any</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>contiene las coordenadas x, y del punto 1</p>
+										<p>Coordenadas del punto 1</p>
 									</div>
 								</li>
 								<li>
-									<h5>arrayPoint2: <span class="tsd-signature-type">any</span></h5>
+									<h5>point2: <span class="tsd-signature-type">any</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>contiene las coordenadas x, y del punto 2</p>
+										<p>Coordenadas del punto 2</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Point</span></h4>
+							<p>Retorna en un nuevo punto el resultado de la suma</p>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="pointsadd" class="tsd-anchor"></a>
-					<h3>points<wbr>Add</h3>
+					<a name="pointproduct" class="tsd-anchor"></a>
+					<h3>point<wbr>Product</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">points<wbr>Add<span class="tsd-signature-symbol">(</span>arrayPoint1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, arrayPoint2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">point<wbr>Product<span class="tsd-signature-symbol">(</span>point1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, operator<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Point</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct04-arrays-tuples-enums-ostream07/blob/1d1b43d/exercises/src/exercise-6.ts#L16">exercise-6.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct04-arrays-tuples-enums-ostream07/blob/102c3e6/exercises/src/exercise-6.ts#L54">exercise-6.ts:54</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Función que suma las coordenadas de 2 puntos</p>
+									<p>Función que realiza el producto de un punto y una constante</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>arrayPoint1: <span class="tsd-signature-type">any</span></h5>
+									<h5>point1: <span class="tsd-signature-type">any</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>contiene las coordenadas x, y del punto 1</p>
-									</div>
-								</li>
-								<li>
-									<h5>arrayPoint2: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>contiene las coordenadas x, y del punto 2</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-							<p>punto resultante de la suma de los dos anteriores</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="pointsproduct" class="tsd-anchor"></a>
-					<h3>points<wbr>Product</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">points<wbr>Product<span class="tsd-signature-symbol">(</span>arrayPoint1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, operator<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct04-arrays-tuples-enums-ostream07/blob/1d1b43d/exercises/src/exercise-6.ts#L44">exercise-6.ts:44</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Función que realiza el producto de un punto por una constante</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>arrayPoint1: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>contiene las coordenadas x, y del punto</p>
+										<p>Coordenadas del punto 1</p>
 									</div>
 								</li>
 								<li>
 									<h5>operator: <span class="tsd-signature-type">any</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>constante por la que multiplicaremos el punto</p>
+										<p>Constante</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-							<p>punto resultante del producto</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Point</span></h4>
+							<p>Retorna en un nuevo punto el resultado de la multiplicación</p>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="pointssubstract" class="tsd-anchor"></a>
-					<h3>points<wbr>Substract</h3>
+					<a name="pointsubstract" class="tsd-anchor"></a>
+					<h3>point<wbr>Substract</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">points<wbr>Substract<span class="tsd-signature-symbol">(</span>arrayPoint1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, arrayPoint2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">point<wbr>Substract<span class="tsd-signature-symbol">(</span>point1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, point2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Point</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct04-arrays-tuples-enums-ostream07/blob/1d1b43d/exercises/src/exercise-6.ts#L30">exercise-6.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct04-arrays-tuples-enums-ostream07/blob/102c3e6/exercises/src/exercise-6.ts#L42">exercise-6.ts:42</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Función que resta las coordenadas de dos puntos</p>
+									<p>Función que realiza la resta de dos puntos</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>arrayPoint1: <span class="tsd-signature-type">any</span></h5>
+									<h5>point1: <span class="tsd-signature-type">any</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>contiene las coordenadas x, y del punto 1</p>
+										<p>Coordenadas del punto 1</p>
 									</div>
 								</li>
 								<li>
-									<h5>arrayPoint2: <span class="tsd-signature-type">any</span></h5>
+									<h5>point2: <span class="tsd-signature-type">any</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>contiene las coordenadas x, y del punto 2</p>
+										<p>Coordenadas del punto 2</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-							<p>punto resultante de la suma de los dos anteriores</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Point</span></h4>
+							<p>Retorna en un nuevo punto el resultado de la resta</p>
 						</li>
 					</ul>
 				</section>
@@ -281,6 +242,9 @@
 				<ul>
 					<li class=" ">
 						<a href="../modules.html">Modules</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="exercise_1.html">exercise-<wbr>1</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="exercise_2.html">exercise-<wbr>2</a>
@@ -297,6 +261,12 @@
 					<li class="current tsd-kind-module">
 						<a href="exercise_6.html">exercise-<wbr>6</a>
 					</li>
+					<li class=" tsd-kind-module">
+						<a href="exercise_7.html">exercise-<wbr>7</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="exercise_8.html">exercise-<wbr>8</a>
+					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
@@ -305,16 +275,13 @@
 						<a href="exercise_6.html#euclideandistance" class="tsd-kind-icon">euclidean<wbr>Distance</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="exercise_6.html#point" class="tsd-kind-icon">point</a>
+						<a href="exercise_6.html#pointadd" class="tsd-kind-icon">point<wbr>Add</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="exercise_6.html#pointsadd" class="tsd-kind-icon">points<wbr>Add</a>
+						<a href="exercise_6.html#pointproduct" class="tsd-kind-icon">point<wbr>Product</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="exercise_6.html#pointsproduct" class="tsd-kind-icon">points<wbr>Product</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="exercise_6.html#pointssubstract" class="tsd-kind-icon">points<wbr>Substract</a>
+						<a href="exercise_6.html#pointsubstract" class="tsd-kind-icon">point<wbr>Substract</a>
 					</li>
 				</ul>
 			</nav>
@@ -326,7 +293,6 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 			</ul>
 		</div>
