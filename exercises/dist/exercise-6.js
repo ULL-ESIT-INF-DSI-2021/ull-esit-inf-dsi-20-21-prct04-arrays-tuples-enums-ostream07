@@ -18,7 +18,7 @@ let final_result = 0;
  * @param point2 Coordenadas del punto 2
  * @returns Retorna en un nuevo punto el resultado de la suma
  */
-function pointAdd(point1, point2) {
+export function pointAdd(point1, point2) {
     result.x = point1.x + point2.x;
     result.y = point1.y + point2.y;
     return result;
@@ -29,17 +29,17 @@ function pointAdd(point1, point2) {
  * @param point2 Coordenadas del punto 2
  * @returns Retorna en un nuevo punto el resultado de la resta
  */
-function pointSubstract(point1, point2) {
+export function pointSubstract(point1, point2) {
     result.x = point1.x - point2.x;
     result.y = point1.y - point2.y;
     return result;
 }
-function pointProduct(point1, operator) {
+export function pointProduct(point1, operator) {
     result.x = point1.x * operator;
     result.y = point1.y * operator;
     return result;
 }
-function euclideanDistance(point1, point2) {
+export function euclideanDistance(point1, point2) {
     result.x = Math.pow(point2.x - point1.x, 2);
     result.y = Math.pow(point2.y - point1.y, 2);
     final_result = Math.sqrt(result.x + result.y);
@@ -49,7 +49,7 @@ console.log(`Punto 1: ` + `${point1.x}, ${point1.y}`);
 console.log(`Punto 2: ` + `${point2.x}, ${point2.y}\n`);
 // Mostramos resultados de las operaciones
 pointAdd(point1, point2);
-console.log(`Resultado de la suma: ` + `${result.x}, ${result.y}`);
+console.log(`Resultado de la resta: ` + `${result.x}, ${result.y}`);
 pointSubstract(point1, point2);
 console.log(`Resultado de la resta: ` + `${result.x}, ${result.y}`);
 pointProduct(point1, operator);

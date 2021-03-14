@@ -1,7 +1,7 @@
 const nPoint1 = [1, 2, 3, 4];
 const nPoint2 = [10, 8, 9, 7];
 const constante = 3;
-function nPointsAdd(nPoint1, nPoint2) {
+export function nPointsAdd(nPoint1, nPoint2) {
     const result = [0, 0, 0];
     if (nPoint1.length !== nPoint2.length) {
         console.log(`Error!! Para operar con ellos deben tener las mismas dimensiones`);
@@ -12,7 +12,7 @@ function nPointsAdd(nPoint1, nPoint2) {
     }
     return result;
 }
-function nPointsSubstract(nPoint1, nPoint2) {
+export function nPointsSubstract(nPoint1, nPoint2) {
     const result = [0, 0, 0];
     if (nPoint1.length !== nPoint2.length) {
         console.log(`Error!! Para operar con ellos deben tener las mismas dimensiones`);
@@ -23,14 +23,14 @@ function nPointsSubstract(nPoint1, nPoint2) {
     }
     return result;
 }
-function nPointsProduct(nPoint1, constante) {
+export function nPointsProduct(nPoint1, constante) {
     const result = [0, 0, 0];
     for (let i = 0; i < nPoint1.length; i++) {
         result[i] = nPoint1[i] * constante;
     }
     return result;
 }
-function nPointsEuclideanDistance(nPoint1, nPoint2) {
+export function nPointsEuclideanDistance(nPoint1, nPoint2) {
     let result = 0;
     if (nPoint1.length !== nPoint2.length) {
         console.log(`Error!! Para operar con ellos deben tener las mismas dimensiones`);

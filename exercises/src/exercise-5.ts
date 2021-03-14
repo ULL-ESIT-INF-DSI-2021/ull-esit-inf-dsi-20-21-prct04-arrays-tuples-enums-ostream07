@@ -11,7 +11,7 @@ console.log(multiplyAll(array5)(3));
  * @param numeros Vector con números enteros
  * @returns Devuelve un nuevo vector con sus valores multiplicados por la constante
  */
-function multiplyAll(numeros: number[]) {
+export function multiplyAll(numeros: number[]) {
   const multiplicador: number = numeros.length;
   return function(multiplicador: number) {
   let resultMultiplicaciones: number[] = [];

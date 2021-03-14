@@ -1,15 +1,15 @@
 /* eslint-disable indent */
 /* eslint-disable max-len */
-/*
-console.log('Indique el código de color de la resistencia');
-const text = process.openStdin();
-
-decodeResistor(text);
-
-function decodeResistor(codigoColores: String) {
-  enum dicCodificaciones {'negro', 'marron', 'rojo', 'naranja',
+enum dicCodificaciones {'negro', 'marron', 'rojo', 'naranja',
                       'amarillo', 'verde', 'azul', 'violeta', 'gris', 'blanco'};
-  const codificaciones_sz: number = dicCodificaciones.length;
+
+/**
+ * Función que realiza la concatenación de los valores de las ressitencias
+ * @param codigoColores string con los colores de las resistencias
+ * @return Devuelve la concatenación de los valores de las bandas.
+ */
+export function decodeResistor(codigoColores: String) {
+  const codificaciones_sz: number = 10;
   let codigoColoresFrac = codigoColores.split('-');
   let result: String = '';
 
@@ -28,4 +28,7 @@ function decodeResistor(codigoColores: String) {
 function removeAccents(str:String): String {
   return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
-*/
+
+let bandOption1: string = 'negro, verde';
+let badnOption2: string = 'blanco, verde, violeta';
+decodeResistor(badnOption2);

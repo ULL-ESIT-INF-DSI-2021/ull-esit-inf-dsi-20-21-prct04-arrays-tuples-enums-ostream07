@@ -4,7 +4,13 @@ const nPoint1: nPoints = [1, 2, 3, 4];
 const nPoint2: nPoints = [10, 8, 9, 7];
 const constante: number = 3;
 
-function nPointsAdd(nPoint1, nPoint2): nPoints {
+/**
+ * Función que realiza la suma de dos puntos n-dimensionales
+ * @param nPoint1 Coordenadas del punto 1 n-dimensional
+ * @param nPoint2 Coordenadas del punto 2 n-dimensional
+ * @returns Retorna en un nuevo punto el resultado de la suma
+ */
+export function nPointsAdd(nPoint1, nPoint2): nPoints {
   const result: nPoints = [0, 0, 0];
   if (nPoint1.length !== nPoint2.length) {
     console.log(`Error!! Para operar con ellos deben tener las mismas dimensiones`);
@@ -16,8 +22,13 @@ function nPointsAdd(nPoint1, nPoint2): nPoints {
   return result;
 }
 
-
-function nPointsSubstract(nPoint1, nPoint2): nPoints {
+/**
+ * Función que realiza la resta de dos puntos n-dimensionales
+ * @param nPoint1 Coordenadas del punto 1 n-dimensional
+ * @param nPoint2 Coordenadas del punto 2 n-dimensional
+ * @returns Retorna en un nuevo punto el resultado de la resta
+ */
+export function nPointsSubstract(nPoint1, nPoint2): nPoints {
   const result: nPoints = [0, 0, 0];
   if (nPoint1.length !== nPoint2.length) {
     console.log(`Error!! Para operar con ellos deben tener las mismas dimensiones`);
@@ -29,7 +40,13 @@ function nPointsSubstract(nPoint1, nPoint2): nPoints {
   return result;
 }
 
-function nPointsProduct(nPoint1, constante): nPoints {
+/**
+ * Función que realiza el producto de un punto n-dimensional por una constante
+ * @param nPoint1 Coordenadas del punto 1 n-dimensional
+ * @param constante valor de la constante
+ * @returns Retorna en un nuevo punto el resultado del producto
+ */
+export function nPointsProduct(nPoint1, constante): nPoints {
   const result: nPoints = [0, 0, 0];
   for (let i: number = 0; i < nPoint1.length; i++) {
     result[i] = nPoint1[i] * constante;
@@ -37,7 +54,13 @@ function nPointsProduct(nPoint1, constante): nPoints {
   return result;
 }
 
-function nPointsEuclideanDistance(nPoint1, nPoint2) {
+/**
+ * Función que realiza la distancia euclídea de dos puntos n-dimensionales
+ * @param nPoint1 Coordenadas del punto 1 n-dimensional
+ * @param nPoint2 Coordenadas del punto 2 n-dimensional
+ * @returns Retorna el valor de la distancia euclídea entre ambos puntos
+ */
+export function nPointsEuclideanDistance(nPoint1, nPoint2) {
   let result: number = 0;
   if (nPoint1.length !== nPoint2.length) {
     console.log(`Error!! Para operar con ellos deben tener las mismas dimensiones`);

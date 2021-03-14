@@ -1,9 +1,4 @@
 /* eslint-disable max-len */
-
-const array3: any[] = ['u', 6, 'd', 1, 'i', 'w', 6, 's', 't', 4, 'a', 6, 'g', 1, 2, 'w', 8, 'o', 2, 0];
-
-console.log(meanAndConcatenate(array3));
-
 /**
  * Esta función tiene dos cometidos, el priemro es identificar todos los números
  * que contiene el array dado, y hacer una media con ellos. Y la segunda es
@@ -16,7 +11,7 @@ console.log(meanAndConcatenate(array3));
  * @returns Devuelve un vector con la media entre sus cifras numéricas y la concatenación
  * de todas sus letras después.
  */
-function meanAndConcatenate(datos: any[]) {
+export function meanAndConcatenate(datos: any[]) {
   const letrasRegx: RegExp = /^[a-zA-Z áéíóú]{1,32}$/;
   const numerosRegx: RegExp = /^[0-9]{9}$/;
   let media: number = 0;
@@ -37,3 +32,6 @@ function meanAndConcatenate(datos: any[]) {
   return [media, cadena];
 }
 
+const array3: any[] = ['u', 6, 'd', 1, 'i', 'w', 6, 's', 't', 4, 'a', 6, 'g', 1, 2, 'w', 8, 'o', 2, 0];
+console.log(`Cadena introducida: ` + array3);
+console.log(meanAndConcatenate(array3));
