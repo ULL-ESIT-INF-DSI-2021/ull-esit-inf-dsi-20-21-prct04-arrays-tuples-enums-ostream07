@@ -1,87 +1,58 @@
+const point1 = {
+    x: 1,
+    y: 4,
+};
+const point2 = {
+    x: 2,
+    y: 7,
+};
+let result = {
+    x: 0,
+    y: 0,
+};
+const operator = 5;
+let final_result = 0;
 /**
- * Variables globales
+ * Función que realiza la suma de dos puntos
+ * @param point1 Coordenadas del punto 1
+ * @param point2 Coordenadas del punto 2
+ * @returns Retorna en un nuevo punto el resultado de la suma
  */
-const arrayPoint1 = new Array();
-const arrayPoint2 = new Array();
-const operator = 7;
-point(arrayPoint1, arrayPoint2);
-/**
- * Función que suma las coordenadas de 2 puntos
- * @param arrayPoint1 contiene las coordenadas x, y del punto 1
- * @param arrayPoint2 contiene las coordenadas x, y del punto 2
- * @returns punto resultante de la suma de los dos anteriores
- */
-export function pointsAdd(arrayPoint1, arrayPoint2) {
-    const arrayResult = new Array(1);
-    for (let i = 0; i < 2; i++) {
-        arrayResult[i] = arrayPoint1[i] + arrayPoint2[i];
-    }
-    return console.log(`\nResultado de la suma: ` + arrayResult);
+function pointAdd(point1, point2) {
+    result.x = point1.x + point2.x;
+    result.y = point1.y + point2.y;
+    return result;
 }
 /**
- * Función que resta las coordenadas de dos puntos
- * @param arrayPoint1 contiene las coordenadas x, y del punto 1
- * @param arrayPoint2 contiene las coordenadas x, y del punto 2
- * @returns punto resultante de la suma de los dos anteriores
+ * Función que realiza la resta de dos puntos
+ * @param point1 Coordenadas del punto 1
+ * @param point2 Coordenadas del punto 2
+ * @returns Retorna en un nuevo punto el resultado de la resta
  */
-export function pointsSubstract(arrayPoint1, arrayPoint2) {
-    const arrayResult = new Array(1);
-    for (let i = 0; i < 2; i++) {
-        arrayResult[i] = arrayPoint1[i] - arrayPoint2[i];
-    }
-    return console.log(`Resultado de la resta: ` + arrayResult);
+function pointSubstract(point1, point2) {
+    result.x = point1.x - point2.x;
+    result.y = point1.y - point2.y;
+    return result;
 }
-/**
- * Función que realiza el producto de un punto por una constante
- * @param arrayPoint1 contiene las coordenadas x, y del punto
- * @param operator constante por la que multiplicaremos el punto
- * @returns punto resultante del producto
- */
-export function pointsProduct(arrayPoint1, operator) {
-    const arrayResult = new Array(1);
-    for (let i = 0; i < 2; i++) {
-        arrayResult[i] = arrayPoint1[i] * operator;
-    }
-    return console.log(`Resultado del producto: ` + arrayResult);
+function pointProduct(point1, operator) {
+    result.x = point1.x * operator;
+    result.y = point1.y * operator;
+    return result;
 }
-/**
- * Aplicando el teorema de Pitágoras, devuelve la distancia Euclídea
- * entre 2 puntos
- * @param arrayPoint1 contiene las coordenadas x, y del punto 1.
- * @param arrayPoint2 contiene las coordenadas x, y del punto 2.
- * @returns Devuelve con 2 decimales de precisión la distancia Euclídea
- */
-export function euclideanDistance(arrayPoint1, arrayPoint2) {
-    let finalResult = 0;
-    let result1 = 0;
-    let result2 = 0;
-    for (let i = 0; i < 1; i++) {
-        result1 = Math.pow(arrayPoint2[i] - arrayPoint1[i], 2);
-    }
-    for (let i = 1; i < 2; i++) {
-        result2 = Math.pow(arrayPoint2[i] - arrayPoint1[i], 2);
-    }
-    finalResult = Math.sqrt(result1 + result2);
-    return console.log(`Distancia Euclídea entre ambos puntos: ` +
-        finalResult.toFixed(2));
+function euclideanDistance(point1, point2) {
+    result.x = Math.pow(point2.x - point1.x, 2);
+    result.y = Math.pow(point2.y - point1.y, 2);
+    final_result = Math.sqrt(result.x + result.y);
+    return final_result;
 }
-/**
- * FUNCIÓN PRINCIPAL
- * @param arrayPoint1 contiene las coordenadas x, y del punto 1
- * @param arrayPoint2 contiene las coordenadas x, y del punto 2
- */
-export function point(arrayPoint1, arrayPoint2) {
-    const Xpoint1 = 1;
-    const Ypoint1 = 7;
-    const Xpoint2 = 2;
-    const Ypoint2 = 4;
-    arrayPoint1.push(Xpoint1, Ypoint1);
-    console.log(`Punto 1: ` + arrayPoint1);
-    arrayPoint2.push(Xpoint2, Ypoint2);
-    console.log(`Punto 2: ` + arrayPoint2);
-    // Llamadas a funciones
-    pointsAdd(arrayPoint1, arrayPoint2);
-    pointsSubstract(arrayPoint1, arrayPoint2);
-    pointsProduct(arrayPoint1, operator);
-    euclideanDistance(arrayPoint1, arrayPoint2);
-}
+console.log(`Punto 1: ` + `${point1.x}, ${point1.y}`);
+console.log(`Punto 2: ` + `${point2.x}, ${point2.y}\n`);
+// Mostramos resultados de las operaciones
+pointAdd(point1, point2);
+console.log(`Resultado de la suma: ` + `${result.x}, ${result.y}`);
+pointSubstract(point1, point2);
+console.log(`Resultado de la resta: ` + `${result.x}, ${result.y}`);
+pointProduct(point1, operator);
+console.log(`Resultado del producto: ` + `${result.x}, ${result.y}`);
+euclideanDistance(point1, point2);
+console.log(`Distacia Euclídea entre ambos puntos: ` + final_result.toFixed(2));
